@@ -4,7 +4,7 @@
 
 import type {nsISupports, nsIIDRef} from "../base/nsISupports"
 
-export interface nsIFactory <nsQIResult> extends nsISupports<nsQIResult> {
-  createInstance(iid:nsIIDRef):nsQIResult,
+export interface nsIFactory <nsQIResult> extends nsISupports<nsIFactory<nsQIResult>> {
+  createInstance(outer:null|nsISupports<*>, iid:nsIIDRef):nsQIResult,
   lockFactory(lock:boolean):void
 }

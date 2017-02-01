@@ -22,3 +22,6 @@ export interface nsIJSCID <nsQIResult> extends nsIJSID {
 // Export nsIJSID as nsIIDRef as well since that is what exposed to scriptable
 // XPCOM.
 export type nsIIDRef = nsIJSID
+export type nsIDPtr = nsIJSID
+export type nsCIDRef = nsIJSID
+export type nsCIDPtr = nsIJSID

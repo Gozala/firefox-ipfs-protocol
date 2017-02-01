@@ -8,19 +8,19 @@ import type {nsISupports} from "../../xpcom/base/nsISupports"
 export type nsLoadFlags = number
 
 export interface nsIRequestConstants  {
-  static LOAD_REQUESTMASK:nsLoadFlags,
-  static LOAD_NORMAL:nsLoadFlags,
-  static LOAD_BACKGROUND:nsLoadFlags,
-  static INHIBIT_PIPELINE:nsLoadFlags,
-  static INHIBIT_CACHING:nsLoadFlags,
-  static INHIBIT_PERSISTENT_CACHING:nsLoadFlags,
-  static LOAD_BYPASS_CACHE:nsLoadFlags,
-  static LOAD_FROM_CACHE:nsLoadFlags,
-  static VALIDATE_ALWAYS:nsLoadFlags,
-  static VALIDATE_NEVER:nsLoadFlags,
-  static VALIDATE_ONCE_PER_SESSION:nsLoadFlags,
-  static LOAD_ANONYMOUS:nsLoadFlags,
-  static LOAD_FRESH_CONNECTION:nsLoadFlags
+  LOAD_REQUESTMASK:nsLoadFlags,
+  LOAD_NORMAL:nsLoadFlags,
+  LOAD_BACKGROUND:nsLoadFlags,
+  INHIBIT_PIPELINE:nsLoadFlags,
+  INHIBIT_CACHING:nsLoadFlags,
+  INHIBIT_PERSISTENT_CACHING:nsLoadFlags,
+  LOAD_BYPASS_CACHE:nsLoadFlags,
+  LOAD_FROM_CACHE:nsLoadFlags,
+  VALIDATE_ALWAYS:nsLoadFlags,
+  VALIDATE_NEVER:nsLoadFlags,
+  VALIDATE_ONCE_PER_SESSION:nsLoadFlags,
+  LOAD_ANONYMOUS:nsLoadFlags,
+  LOAD_FRESH_CONNECTION:nsLoadFlags
 }
 
 export interface nsIRequest extends nsISupports<nsIRequest> {

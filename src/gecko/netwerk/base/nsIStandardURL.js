@@ -16,5 +16,5 @@ export interface nsIStandardURLConstants {
 
 export interface nsIStandardURL extends nsIURL {
   mutable:boolean,
-  init(urlType:nsStandardURLType, defaultPort:number, spec:string, originCharset:string, base:nsIURI):void
+  init(urlType:nsStandardURLType, defaultPort:number, spec:string, originCharset:string, base:null|nsIURI):void
 }

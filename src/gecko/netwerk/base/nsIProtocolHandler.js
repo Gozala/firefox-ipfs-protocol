@@ -46,6 +46,6 @@ export interface nsIProtocolHandler extends nsISupports<nsIProtocolHandler> {
   allowPort(port:long, scheme:string):boolean,
   // Constructs a new channel from the given URI for this protocol handler.
   newChannel(uri:nsIURI):nsIChannel,
-  newURI(spec:AUTF8String, originCharset:string, baseURI:?nsIURI):nsIURI,
+  newURI(spec:AUTF8String, originCharset:string, baseURI:null|nsIURI):nsIURI,
   newChannel2(uri:nsIURI, loadInfo:nsILoadInfo):nsIChannel
 }
